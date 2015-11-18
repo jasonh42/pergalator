@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/app.js",
+    entry: "./src/index.js",
     output: {
         path: "./build",
         publicPath: "/build/",
@@ -8,8 +8,11 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.html$/, loader: "html" },
-            { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+            { test: /\.js$/, loader: 'babel', exclude: /node_modules/, },
             { test: /\.scss$/, loaders: ["style", "css", "sass"] }
         ]
+    },
+    babel: {
+        presets: ['es2015']
     }
 };
