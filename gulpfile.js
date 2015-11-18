@@ -8,7 +8,7 @@ var webpackConfig = require('./webpack.config.js');
 // Default
 // =====================================
 
-gulp.task('default', ['webpack-dev-server'], function() {});
+gulp.task('default', ['build', 'webpack-dev-server'], function() {});
 
 gulp.task('webpack-dev-server', function() {
     new WebpackDevServer(webpack(webpackConfig), {
