@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from 'components/app'
+import App from './components/app'
 import { configRouter } from './routes'
 
 // install router

@@ -1,3 +1,3 @@
 export default Vue.extend({
-   template: require("app.html")
+   template: require("./app.html")
 });
