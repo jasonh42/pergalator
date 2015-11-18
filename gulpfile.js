@@ -12,7 +12,7 @@ gulp.task('default', ['webpack-dev-server'], function() {});
 
 gulp.task('webpack-dev-server', function() {
     new WebpackDevServer(webpack(webpackConfig), {
-        contentBase: 'src/index.html',
+        contentBase: 'dist/index.html',
         publicPath: '/' + webpackConfig.output.publicPath
     }).listen(8080, 'localhost', function(err) {
         if (err) {

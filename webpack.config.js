@@ -1,9 +1,9 @@
 module.exports = {
     entry: "./src/index.js",
     output: {
-        path: "./build",
-        publicPath: "/build/",
-        filename: "build.js"
+        path: __dirname + '/build/',
+        publicPath: 'build/',
+        filename: 'build.js'
     },
     module: {
         loaders: [
