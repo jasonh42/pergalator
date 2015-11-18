@@ -29,6 +29,6 @@
     "vue-router": "^0.7.5"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "node app.js"
   }
 }
