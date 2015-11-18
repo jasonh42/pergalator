@@ -1,0 +1,29 @@
+{
+  "name": "Pergalator",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Pandora",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonh42/pergalator"
+  },
+
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "~1.2.3",
+    "gulp-clean": "~0.2.4",
+    "gulp-util": "~2.2.14",
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0"
+  },
+
+  "dependencies": {
+    "bootstrap-sass": "^3.0.0",
+    "vue": "1.0.8",
+    "vue-router": "^0.7.5",
+    "html-loader": "^0.3.0",
+    "sass-loader": "3.1.1"
+  }
+}
