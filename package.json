@@ -25,5 +25,9 @@
     "vue-router": "^0.7.5",
     "html-loader": "^0.3.0",
     "sass-loader": "3.1.1"
+  },
+
+  "scripts": {
+    "start": "gulp"
   }
 }

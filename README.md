@@ -1,2 +1,3 @@
 # pergalator
-Pergalator
+Setup this Project
+------------------
