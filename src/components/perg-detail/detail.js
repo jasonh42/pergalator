@@ -5,8 +5,7 @@ module.exports = {
     template: require("./detail.html"),
     data: function() {
       return {
-        perg: {},
-        message: 'hiss'
+        perg: {}
       }
     },
     ready: function() {
