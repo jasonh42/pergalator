@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "group_id": "1",
+    "creator_id": "1",
+    "title": "Foos Event",
+    "description": "Foo Event with Baz & Bar",
+    "start": "2015-12-16T03:24:00",
+    "end": "2015-12-17T03:24:00",
+    "venue": "Pandora",
+    "participants": [
+      "Eric Clifford"
+    ]
+  },
+  {
+    "id": "2",
+    "group_id": "2",
+    "creator_id": "1",
+    "title": "Test Event",
+    "description": "Another event",
+    "start": "2015-12-16T03:24:00",
+    "end": "2015-12-17T03:24:00",
+    "venue": "Pandora",
+    "participants": [
+      "Eric Clifford"
+    ]
+  }
+]
