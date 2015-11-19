@@ -1,7 +1,11 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var webpack = require('webpack');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: {
+        app: "./src/index.js",
+        vendors: ['vue', 'vue-resource', 'vue-router'] //used for commonschunk plugin (see https://christianalfoni.github.io/react-webpack-cookbook/Split-app-and-vendors.html)
+    },
     output: {
         path: __dirname + '/build/',
         publicPath: '/',
@@ -26,7 +30,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("style.css")
+        new ExtractTextPlugin("style.css"),
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
         //uglify, etc
     ],
     babel: {
