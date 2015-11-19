@@ -1,3 +1,4 @@
+require('./home.scss');
 module.exports = {
     template: require("./home.html"),
     components: {
