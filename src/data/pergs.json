@@ -25,8 +25,8 @@
       }
     ],
     "categories": [
-      "food",
-      "music"
+      "Sports",
+      "Exercise"
     ],
     "location": "Oakland",
     "email_alias": "jsmith@pandora.com",
@@ -34,32 +34,32 @@
   },
   {
     "id": "2",
-    "name": "Ping Pong Perg 2",
+    "name": "Pull up Perg",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
-    "description": "Perg for Ping Pong",
+    "description": "Perg for Pull ups!",
     "avatar_url": "http://placehold.it/100x100",
     "member_list": [
-      "Eric Clifford"
+      "Keyur Patel"
     ],
     "event_list": [
       {
-        "id": "1",
-        "group_id": "1",
-        "creator_id": "1",
-        "title": "Ping Pong Finals",
-        "description": "Ping Pong finals in backstage",
+        "id": "2",
+        "group_id": "2",
+        "creator_id": "2",
+        "title": "Pull up match up!",
+        "description": "Justin vs. Kat",
         "start": "2015-12-16T03:24:00",
         "end": "2015-12-17T03:24:00",
-        "venue": "Pandora",
+        "venue": "on 16th",
         "participants": [
-          "Eric Clifford"
+          "Justin, Kat, Andre, Keyur"
         ]
       }
     ],
     "categories": [
-      "food",
-      "music"
+      "Exercise",
+      "Sports"
     ],
     "location": "Oakland",
     "email_alias": "jsmith@pandora.com",
@@ -67,32 +67,33 @@
   },
   {
     "id": "3",
-    "name": "Ping Pong Perg 3",
+    "name": "Bay Area Fishers",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
-    "description": "Perg for Ping Pong",
+    "description": "Perg for Fishing",
     "avatar_url": "http://placehold.it/100x100",
     "member_list": [
-      "Eric Clifford"
+      "Dave Pryzgoda"
     ],
     "event_list": [
       {
-        "id": "1",
-        "group_id": "1",
-        "creator_id": "1",
-        "title": "Ping Pong Finals",
-        "description": "Ping Pong finals in backstage",
+        "id": "3",
+        "group_id": "3",
+        "creator_id": "3",
+        "title": "Fishing Trip",
+        "description": "We will sail on the north side of the Bay",
         "start": "2015-12-16T03:24:00",
         "end": "2015-12-17T03:24:00",
-        "venue": "Pandora",
+        "venue": "Berkeley Pier",
         "participants": [
-          "Eric Clifford"
+          "Dave Pryzgoda"
         ]
       }
     ],
     "categories": [
-      "food",
-      "music"
+      "Food",
+      "Music",
+      "Sports"
     ],
     "location": "Oakland",
     "email_alias": "jsmith@pandora.com",
