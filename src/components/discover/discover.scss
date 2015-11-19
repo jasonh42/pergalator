@@ -1,2 +1,27 @@
-.discover {
+.search {
+	input[type='text'] {
+		font-size: 16pt;
+		font-weight: 200;
+		padding: 24px 12px 25px;
+		border: 2px solid #66666A;
+		border-right: none;
+		letter-spacing: 1px;
+
+		&::-webkit-input-placeholder {
+			color: #C3C3C3;
+		}
+	}
+
+	button {
+		color: #fff;
+		background-color: #7AD1F1;
+		font-size: 26px;
+		border: 2px solid #66666A;
+		border-left: none;
+
+		&:hover, &:focus {
+			color: #fff;
+			background-color: #00B4F7;
+		}
+	}
 }
