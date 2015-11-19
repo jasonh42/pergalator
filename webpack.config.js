@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
@@ -26,12 +27,26 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("style.css")
-        //uglify, etc
+        new ExtractTextPlugin("style.css"),
+        new BrowserSyncPlugin(
+          // BrowserSync options
+          {
+            // browse to http://localhost:3001/ during development
+            host: 'localhost',
+            port: 3001,
+            // proxy the express server
+            // (which should be serving on http://localhost:3000/)
+            // through BrowserSync
+            proxy: 'http://localhost:3000/'
+          },
+          // plugin options
+          {
+            // sinc we are not using Webpack Dev Server let browsersync reload page
+            reload: true
+          }
+        )
     ],
     babel: {
         presets: ['es2015']
     }
 };
-
-
