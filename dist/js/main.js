@@ -1,10 +1,10 @@
 new Vue({
     el: '#editor',
     data: {
-        input: '# hello'
+        input: '#hello'
     },
     filters: {
-        marked: marked
+        marked: 'marked'
     }
 })/**
  * Created by ntran on 11/18/15.
