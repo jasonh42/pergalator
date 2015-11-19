@@ -9,62 +9,81 @@
 
   <form id="create-perg-form" class="form-horizontal">
 
-    <!-- <div class="col-lg-5">
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon">
-          <span class="glyphicon glyphicon-unchecked"></span>
-        </span>
+    <div class="col-lg-8">
+      <div class="form-group" v-bind:class="pergNameClasses">
         <input type="text"
                class="form-control"
                placeholder="NAME OF PERG"
-               aria-describedby="basic-addon"
+               aria-describedby="inputPergNameSuccess"
                v-model="perg.name"/>
-      </div>
-    </div> -->
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="form-group" v-bind:class="pergNameClasses">
-          <input type="text"
-                 class="form-control"
-                 placeholder="NAME OF PERG"
-                 aria-describedby="inputSuccess4Status"
-                 v-model="perg.state"/>
-          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-          <span id="inputSuccess4Status" class="sr-only"></span>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="form-group" v-bind:class="pergNameClasses">
-          <input type="text"
-                 class="form-control"
-                 placeholder="NAME OF PERG"
-                 aria-describedby="inputSuccess4Status"
-                 v-model="perg.state"/>
-          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-          <span id="inputSuccess4Status" class="sr-only"></span>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="input-group">
-          <select type="text"
-                  class="selectpicker form-control"
-                  placeholder="CITY"
-                  aria-describedby="basic-addon"
-                  v-model="perg.city"
-                  data-live-search="true"
-                  title="CITY">
-            <option>Oakland</option>
-            <option>B</option>
-            <option>C</option>
-          </select>
-        </div>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span id="inputPergNameSuccess" class="sr-only"></span>
       </div>
     </div>
 
-    <input class="btn btn-block" type="submit" value="send"/>
+    <div class="col-lg-4">
+      <div class="input-group">
+        <select type="text"
+                class="selectpicker form-control"
+                placeholder="CITY"
+                aria-describedby="basic-addon"
+                v-model="perg.city"
+                data-live-search="true"
+                title="CITY">
+          <option v-for="location in locations">{{ location.name }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="form-group">
+        <input type="text"
+               class="form-control"
+               placeholder="IMAGE DIRECT LINK"
+               aria-describedby="inputImageURLSuccess"
+               v-model="perg.imageURL"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span id="inputImageURLSuccess" class="sr-only"></span>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="form-group">
+        <input type="text"
+               class="form-control"
+               placeholder="FIRST NAME"
+               aria-describedby="inputFirstNameSuccess"
+               v-model="user.firstName"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span id="inputFirstNameSuccess" class="sr-only"></span>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="form-group">
+        <input type="text"
+               class="form-control"
+               placeholder="LAST NAME"
+               aria-describedby="inputLastNameSuccess"
+               v-model="user.lastName"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span id="inputLastNameSuccess" class="sr-only"></span>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="form-group">
+        <input type="text"
+               class="form-control"
+               placeholder="EMAIL"
+               aria-describedby="inputEmailSuccess"
+               v-model="user.email"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span id="inputEmailSuccess" class="sr-only"></span>
+      </div>
+    </div>
+
+    <input class="btn btn-block btn-primary" type="submit" value="SUBMIT"/>
 
   </form>
 </section>
