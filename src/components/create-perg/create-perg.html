@@ -6,18 +6,51 @@
     viverra erat neque id lorem. Praesent luctus dui imperdiet porttitor
     sodales. Vivamus et massa lobortis, egestas leo non, vulputate metus.
   </p>
-  <form id="create-perg-form">
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon">
-        <span class="glyphicon glyphicon-unchecked"></span>
-      </span>
-      <input type="text"
-             class="form-control"
-             placeholder="NAME OF PERG"
-             aria-describedby="basic-addon"
-             v-model="pergName"
-             v-validate="required">
+
+  <form id="create-perg-form" class="form-horizontal">
+
+    <div class="col-lg-5">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon">
+          <span class="glyphicon glyphicon-unchecked"></span>
+        </span>
+        <input type="text"
+               class="form-control"
+               placeholder="NAME OF PERG"
+               aria-describedby="basic-addon"
+               v-model="perg.name"/>
+      </div>
     </div>
-    <input type="submit" value="send" v-if="valid">
+
+    <div class="col-lg-4">
+      <div class="form-group" v-bind:class="pergNameClasses">
+        <input type="text"
+               class="form-control"
+               placeholder="NAME OF PERG"
+               aria-describedby="inputSuccess4Status"
+               v-model="perg.name"/>
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span id="inputSuccess4Status" class="sr-only"></span>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="input-group">
+        <select type="text"
+                class="selectpicker form-control"
+                placeholder="CITY"
+                aria-describedby="basic-addon"
+                v-model="perg.city"
+                data-live-search="true"
+                title="CITY">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+      </div>
+    </div>
+
+    <input class="btn" type="submit" value="send"/>
+
   </form>
 </section>
