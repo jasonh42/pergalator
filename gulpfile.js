@@ -46,19 +46,26 @@ gulp.task('copy', function() {
 });
 
 gulp.task('webpack:build', function(callback) {
-    // Modify some webpack config options
-    var myConfig = Object.create(webpackConfig);
+  var started = false;
+  // Modify some webpack config options
+  var myConfig = Object.create(webpackConfig);
 
-    // Run webpack
-    webpack(myConfig, function(err, stats) {
-        if (err) {
-            throw new gutil.PluginError('webpack:build', err);
-        }
+  function bundle(err, stats) {
+    if (err) {
+        throw new gutil.PluginError('webpack:build', err);
+    }
 
-        gutil.log('[webpack:build]', stats.toString({
-            colors: true
-        }));
+    gutil.log('[webpack:build]', stats.toString({
+        colors: true
+    }));
 
-        callback();
-    });
+    if (!started) {
+      started = true;
+      return callback();
+    }
+  }
+
+  // Run webpack
+  var bundler = webpack(myConfig, bundle);
+  bundler.watch(200, bundle);
 });
