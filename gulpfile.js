@@ -27,7 +27,7 @@ gulp.task('webpack-dev-server', function() {
 // =====================================
 
 gulp.task('clean', function() {
-    gulp.src('dist', {read: false})
+    gulp.src('build', {read: false})
         .pipe(clean());
 });
 
@@ -38,7 +38,7 @@ gulp.task('build', ['copy', 'webpack:build'], function() {});
 
 gulp.task('copy', function() {
     gulp.src('src/index.html')
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('build'));
 });
 
 gulp.task('webpack:build', function(callback) {

@@ -1,1 +1,5 @@
-console.log("This is foo");
+import Vue from 'vue'
+
+module.exports = {
+    template: require("./foo.html")
+}

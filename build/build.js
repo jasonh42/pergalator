@@ -13184,7 +13184,14 @@
 	Object.defineProperty(exports, "__esModule", {
 	   value: true
 	});
-	exports.default = Vue.extend({
+
+	var _vue = __webpack_require__(1);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _vue2.default.extend({
 	   template: __webpack_require__(71)
 	});
 
@@ -13211,16 +13218,34 @@
 	            component: __webpack_require__(73)
 	        }
 
+	        // not found handler
+	        //'*': {
+	        //    component: require('./components/not-found.js')
+	        //}
 	    });
 	}
 
 /***/ },
 /* 73 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	console.log("This is foo");
+	var _vue = __webpack_require__(1);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	module.exports = {
+	    template: __webpack_require__(74)
+	};
+
+/***/ },
+/* 74 */
+/***/ function(module, exports) {
+
+	module.exports = "this s foo";
 
 /***/ }
 /******/ ]);
