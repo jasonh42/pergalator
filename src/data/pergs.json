@@ -31,5 +31,71 @@
     "location": "Oakland",
     "email_alias": "jsmith@pandora.com",
     "owner": "Joe Smith"
+  },
+  {
+    "id": "2",
+    "name": "Ping Pong Perg",
+    "date_created": "2015-12-16T03:24:00",
+    "status": 0,
+    "description": "Perg for Ping Pong",
+    "avatar_url": "http://placehold.it/100x100",
+    "member_list": [
+      "Eric Clifford"
+    ],
+    "event_list": [
+      {
+        "id": "1",
+        "group_id": "1",
+        "creator_id": "1",
+        "title": "Ping Pong Finals",
+        "description": "Ping Pong finals in backstage",
+        "start": "2015-12-16T03:24:00",
+        "end": "2015-12-17T03:24:00",
+        "venue": "Pandora",
+        "participants": [
+          "Eric Clifford"
+        ]
+      }
+    ],
+    "categories": [
+      "food",
+      "music"
+    ],
+    "location": "Oakland",
+    "email_alias": "jsmith@pandora.com",
+    "owner": "Joe Smith"
+  },
+  {
+    "id": "3",
+    "name": "Ping Pong Perg",
+    "date_created": "2015-12-16T03:24:00",
+    "status": 0,
+    "description": "Perg for Ping Pong",
+    "avatar_url": "http://placehold.it/100x100",
+    "member_list": [
+      "Eric Clifford"
+    ],
+    "event_list": [
+      {
+        "id": "1",
+        "group_id": "1",
+        "creator_id": "1",
+        "title": "Ping Pong Finals",
+        "description": "Ping Pong finals in backstage",
+        "start": "2015-12-16T03:24:00",
+        "end": "2015-12-17T03:24:00",
+        "venue": "Pandora",
+        "participants": [
+          "Eric Clifford"
+        ]
+      }
+    ],
+    "categories": [
+      "food",
+      "music"
+    ],
+    "location": "Oakland",
+    "email_alias": "jsmith@pandora.com",
+    "owner": "Joe Smith"
   }
 ]
