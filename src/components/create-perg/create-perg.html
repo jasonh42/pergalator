@@ -1,0 +1,23 @@
+<section class='create-perg'>
+  <h3>Congrats on wanting to start a PERG!</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non urna
+    elit. Quisque congue, metus et sodales dictum, sem dui interdum turpis, ac
+    viverra erat neque id lorem. Praesent luctus dui imperdiet porttitor
+    sodales. Vivamus et massa lobortis, egestas leo non, vulputate metus.
+  </p>
+  <form id="create-perg-form">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon">
+        <span class="glyphicon glyphicon-unchecked"></span>
+      </span>
+      <input type="text"
+             class="form-control"
+             placeholder="NAME OF PERG"
+             aria-describedby="basic-addon"
+             v-model="pergName"
+             v-validate="required">
+    </div>
+    <input type="submit" value="send" v-if="valid">
+  </form>
+</section>
