@@ -1,5 +1,6 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
     entry: {
@@ -9,6 +10,11 @@ module.exports = {
         path: __dirname + '/build/',
         publicPath: '/',
         filename: 'build.js'
+    },
+    resolve: {
+      alias: {
+        'jquery': path.join(__dirname, 'node_modules', 'jquery/dist/jquery.js'),
+      }
     },
     devtool: "source-map",
     module: {
@@ -29,12 +35,14 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("style.css")
-        //uglify, etc
+        new ExtractTextPlugin("style.css"),
+        new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery",
+          "window.jQuery": "jquery"
+        }),
     ],
     babel: {
         presets: ['es2015']
     }
 };
-
-
