@@ -1,3 +1,22 @@
 .filter-container {
   background-color: #E6E6E6;
+  padding: 0 5% 0 5%;
+}
+.filter-divider {
+  border-right: 1px solid #CFCFD0;
+}
+.filter-type {
+  padding: 1% 3% 1% 3%;
+  h1 {
+    color: #00ABF1;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  ul {
+    color: white;
+  }
+  li {
+    display: inline;
+  }
 }
