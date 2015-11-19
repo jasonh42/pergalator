@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="filters col-md-2">
-    	<div class="primary-button">Filters</div>
+    	<div class="primary-button" @click="showFilters = !showFilters">Filters</div>
     </div>
     <div class="create-perg col-md-2">
     	<button class="btn primary-button" data-toggle="modal" data-target="#myModal">Create New PERG</button>
@@ -36,4 +36,4 @@
     </div>
   </div>
 </div>
-<filters></filters>
+<filters v-if="showFilters" transition="expand"></filters>
