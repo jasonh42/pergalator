@@ -8,4 +8,24 @@ body {
   padding: 40px 15px;
 }
 
+.primary-button {
+	padding: 10px 5px;
+	color: #00B4F7;
+ 	text-transform: uppercase;
+	text-align: center;
+	font-size: 16pt;
+	border: 2px solid #00B4F7;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		color: #337AB7;
+		border-color: #337AB7;
+	}
+	&:active {
+		color: #fff;
+		background-color: #337AB7;
+	}
+}
+
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
