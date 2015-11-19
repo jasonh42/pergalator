@@ -7,7 +7,8 @@ module.exports = {
     },
     data: function() {
         return {
-            pergs: []
+            pergs: [],
+            searchText: ""
         }
     },
     ready: function() {

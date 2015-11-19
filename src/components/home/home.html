@@ -8,6 +8,6 @@
 
 </div>
 
-<discover></discover>
+<discover :search-text.sync="searchText"></discover>
 <hr />
-<perg-collection :pergs="pergs"></perg-collection>
+<perg-collection :pergs="pergs" :search-text="searchText"></perg-collection>

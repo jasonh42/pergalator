@@ -1,4 +1,5 @@
 var Vue = require("vue");
+require('./detail.scss');
 
 module.exports = {
     template: require("./detail.html"),

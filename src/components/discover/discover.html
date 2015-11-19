@@ -2,12 +2,12 @@
     <div class="search">
         <div id="custom-search-input" class="col-md-offset-1 col-md-4">
             <div class="input-group">
-                <input type="text" class="  search-query form-control" placeholder="Search" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-danger" type="button">
-                            <span class=" glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
+                <input v-model="searchText" type="text" class="search-query form-control" placeholder="Discover your new favorite PERG" />
+                <span class="input-group-btn">
+                    <button class="btn" type="button">
+                        <span class=" glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
             </div>
         </div>
     </div>

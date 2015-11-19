@@ -1,6 +1,6 @@
-var Vue = require("vue");
 require('./discover.scss');
 
 module.exports = {
-    template: require("./discover.html")
+    template: require("./discover.html"),
+    props: ['searchText']
 };
