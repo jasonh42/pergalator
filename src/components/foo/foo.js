@@ -3,9 +3,16 @@ require('./foo.scss');
 module.exports = {
     template: require("./foo.html"),
 
-    ready: function() {
-        this.$http.get('/whatever', function(data) {
+    data: function() {
+      return {
+        events: []
+      }
+    },
 
+    ready: function() {
+        this.$http.get('/events.json', function(data) {
+            console.log(data);
+            this.$set('events', data);
         }).error(function(resp) {
             alert("Request loading");
         });
