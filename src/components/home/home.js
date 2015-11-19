@@ -1,10 +1,3 @@
-var Vue = require("vue");
-
-var pergs = [
-    {name: "Perg 1 "},
-    {name: "Perg 2"}
-]
-
 module.exports = {
     template: require("./home.html"),
     components: {
@@ -13,7 +6,17 @@ module.exports = {
     },
     data: function() {
         return {
-            pergs: pergs
+            pergs: []
         }
+    },
+    ready: function() {
+
+        this.$http.get('/pergs.json', function(data) {
+            this.$set('pergs', data);
+        }).error(function() {
+            console.log("Error");
+        });
+
     }
+
 };
