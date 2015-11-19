@@ -35,6 +35,6 @@
     "vue-resource": "0.1.17"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "npm install && gulp"
   }
 }
