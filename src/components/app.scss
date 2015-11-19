@@ -19,12 +19,12 @@ body {
 	cursor: pointer;
 
 	&:hover {
-		color: #337AB7;
-		border-color: #337AB7;
+		color: #7AD1F1;
 	}
 	&:active {
 		color: #fff;
-		background-color: #337AB7;
+		background-color: #7AD1F1;
+		border-color: #00B4F7;
 	}
 }
 
