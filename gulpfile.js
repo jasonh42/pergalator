@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var clean = require('gulp-clean');
+var watch = require('gulp-watch');
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./webpack.config.js');
@@ -8,7 +9,11 @@ var webpackConfig = require('./webpack.config.js');
 // Default
 // =====================================
 
-gulp.task('default', ['build', 'dev-server'], function() {});
+gulp.task('default', ['build', 'dev-server'], function() {
+  watch('src/data/**/*.json', function() {
+    gulp.start('copy');
+  });
+});
 
 gulp.task('clean', function() {
     gulp.src('dist', {read: false})
@@ -35,13 +40,14 @@ gulp.task('clean', function() {
     gulp.src('build', {read: false}).pipe(clean());
 });
 
+
 // Build
 // =====================================
 
 gulp.task('build', ['copy', 'webpack:build'], function() {});
 
 gulp.task('copy', function() {
-    gulp.src('src/index.html')
+    gulp.src(['src/index.html', 'src/data/**/*.json'])
         .pipe(gulp.dest('build'));
 });
 
