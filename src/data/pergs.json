@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Ping Pong Perg",
+    "name": "Ping Pong Perg 1",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
     "description": "Perg for Ping Pong",
@@ -34,7 +34,7 @@
   },
   {
     "id": "2",
-    "name": "Ping Pong Perg",
+    "name": "Ping Pong Perg 2",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
     "description": "Perg for Ping Pong",
@@ -67,7 +67,7 @@
   },
   {
     "id": "3",
-    "name": "Ping Pong Perg",
+    "name": "Ping Pong Perg 3",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
     "description": "Perg for Ping Pong",

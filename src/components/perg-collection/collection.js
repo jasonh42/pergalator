@@ -1,6 +1,4 @@
 module.exports = {
     template: require("./collection.html"),
-    props: {
-        pergs: Array
-    }
+    props: ['pergs', 'searchText']
 };
