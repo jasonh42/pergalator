@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Hello Vue</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>First Vue Page</title>
 </head>
 <body>
-<div id="app"></div>
+<div id="editor">
+    <textarea v-model="input" debounce="300">GitHub</textarea>
+    <div v-html="input | marked"></div>
+</div>
 <script src="vue.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
