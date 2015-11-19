@@ -6,6 +6,9 @@ export function configRouter (router) {
         },
         '/foo': {
             component: require('./components/foo/foo.js')
+        },
+        '/perg': {
+            component: require('./components/perg-detail/detail.js')
         }
 
         // not found handler

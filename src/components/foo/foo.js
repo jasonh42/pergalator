@@ -5,13 +5,13 @@ module.exports = {
 
     data: function() {
       return {
-        events: []
+        events: [],
+        message: 'hi'
       }
     },
 
     ready: function() {
         this.$http.get('/events.json', function(data) {
-            console.log(data);
             this.$set('events', data);
         }).error(function(resp) {
             alert("Request loading");
