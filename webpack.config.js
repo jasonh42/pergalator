@@ -3,8 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: "./src/index.js",
-        vendors: ['vue', 'vue-resource', 'vue-router'] //used for commonschunk plugin (see https://christianalfoni.github.io/react-webpack-cookbook/Split-app-and-vendors.html)
+        app: "./src/index.js"
     },
     output: {
         path: __dirname + '/build/',
@@ -30,8 +29,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("style.css"),
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+        new ExtractTextPlugin("style.css")
         //uglify, etc
     ],
     babel: {
