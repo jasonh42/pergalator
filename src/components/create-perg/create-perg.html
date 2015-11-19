@@ -9,7 +9,7 @@
 
   <form id="create-perg-form" class="form-horizontal">
 
-    <div class="col-lg-5">
+    <!-- <div class="col-lg-5">
       <div class="input-group">
         <span class="input-group-addon" id="basic-addon">
           <span class="glyphicon glyphicon-unchecked"></span>
@@ -20,37 +20,51 @@
                aria-describedby="basic-addon"
                v-model="perg.name"/>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-lg-4">
-      <div class="form-group" v-bind:class="pergNameClasses">
-        <input type="text"
-               class="form-control"
-               placeholder="NAME OF PERG"
-               aria-describedby="inputSuccess4Status"
-               v-model="perg.name"/>
-        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-        <span id="inputSuccess4Status" class="sr-only"></span>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group" v-bind:class="pergNameClasses">
+          <input type="text"
+                 class="form-control"
+                 placeholder="NAME OF PERG"
+                 aria-describedby="inputSuccess4Status"
+                 v-model="perg.state"/>
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+          <span id="inputSuccess4Status" class="sr-only"></span>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group" v-bind:class="pergNameClasses">
+          <input type="text"
+                 class="form-control"
+                 placeholder="NAME OF PERG"
+                 aria-describedby="inputSuccess4Status"
+                 v-model="perg.state"/>
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+          <span id="inputSuccess4Status" class="sr-only"></span>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="input-group">
+          <select type="text"
+                  class="selectpicker form-control"
+                  placeholder="CITY"
+                  aria-describedby="basic-addon"
+                  v-model="perg.city"
+                  data-live-search="true"
+                  title="CITY">
+            <option>Oakland</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
       </div>
     </div>
 
-    <div class="col-lg-3">
-      <div class="input-group">
-        <select type="text"
-                class="selectpicker form-control"
-                placeholder="CITY"
-                aria-describedby="basic-addon"
-                v-model="perg.city"
-                data-live-search="true"
-                title="CITY">
-          <option>A</option>
-          <option>B</option>
-          <option>C</option>
-        </select>
-      </div>
-    </div>
-
-    <input class="btn" type="submit" value="send"/>
+    <input class="btn btn-block" type="submit" value="send"/>
 
   </form>
 </section>
