@@ -1,5 +1,4 @@
 var Vue = require("vue");
-require('bootstrap-sass');
 require('./create-perg.scss');
 
 module.exports = {
@@ -26,6 +25,7 @@ module.exports = {
       }).error(function(resp) {
           alert("Request loading");
       });
+
     },
     methods: {
     }

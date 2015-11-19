@@ -23,13 +23,9 @@
 
     <div class="col-lg-4">
       <div class="input-group">
-        <select type="text"
-                class="selectpicker form-control"
-                placeholder="CITY"
-                aria-describedby="basic-addon"
+        <select class="selectpicker form-control"
                 v-model="perg.city"
-                data-live-search="true"
-                title="CITY">
+                data-live-search="true">
           <option v-for="location in locations">{{ location.name }}</option>
         </select>
       </div>
