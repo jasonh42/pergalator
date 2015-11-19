@@ -8,18 +8,23 @@ var webpackConfig = require('./webpack.config.js');
 // Default
 // =====================================
 
-gulp.task('default', ['build', 'webpack-dev-server'], function() {});
+gulp.task('default', ['build', 'dev-server'], function() {});
 
-gulp.task('webpack-dev-server', function() {
-    new WebpackDevServer(webpack(webpackConfig), {
-        contentBase: 'dist/index.html',
-        publicPath: '/' + webpackConfig.output.publicPath
-    }).listen(8080, 'localhost', function(err) {
-        if (err) {
-            throw new gutil.PluginError('pergalator', err);
-        }
+gulp.task('clean', function() {
+    gulp.src('dist', {read: false})
+        .pipe(clean());
+});
 
-        gutil.log('[pergalator]', 'http://localhost:8080/pergalator/');
+gulp.task('dev-server', function() {
+    var express = require('express');
+    var app = express();
+
+    app.use(express.static(__dirname + '/build'));
+    var server = app.listen(3000, function() {
+        var host = server.address().address;
+        var port = server.address().port;
+
+        console.log('Example app listening at http://%s:%s', host, port);
     });
 });
 
@@ -27,8 +32,7 @@ gulp.task('webpack-dev-server', function() {
 // =====================================
 
 gulp.task('clean', function() {
-    gulp.src('build', {read: false})
-        .pipe(clean());
+    gulp.src('build', {read: false}).pipe(clean());
 });
 
 // Build
@@ -44,13 +48,6 @@ gulp.task('copy', function() {
 gulp.task('webpack:build', function(callback) {
     // Modify some webpack config options
     var myConfig = Object.create(webpackConfig);
-
-    //plugins: [
-    //    new webpack.optimize.UglifyJsPlugin({
-    //        sourceMap: false,
-    //        mangle: false
-    //    })
-    //],
 
     // Run webpack
     webpack(myConfig, function(err, stats) {
