@@ -32,6 +32,15 @@ $accent-color: #00B4F7;
   right: 0;
   @include blur(10px);
 }
+.welcome-banner-overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
 .welcome-text {
   color: white;
   h1 {
