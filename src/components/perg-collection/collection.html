@@ -5,7 +5,13 @@
                 <div class="photo" style="background-image: url('{{p.avatar_url}}')"></div>
                 <div class="caption">
                     <h3>{{p.name}}</h3>
-                    <p>{{p.location}}</p>
+                    <div class="float-left">
+                        <p>{{p.location}}</p>
+                    </div>
+                    <div class="float-right">
+                        <span>{{ getStatusName(p.status) }}<span>
+                    </div>
+                    <div class="clear-both"></div>
                 </div>
             </a>
         </div>

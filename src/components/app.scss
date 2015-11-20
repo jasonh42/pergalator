@@ -42,4 +42,16 @@ body {
   border-radius: $radius;
 }
 
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
 //@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
