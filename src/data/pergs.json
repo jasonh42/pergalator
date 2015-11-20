@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Ping Pong Perg",
+    "name": "Ping Pong",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
     "description": "Perg for Ping Pong",
@@ -34,11 +34,11 @@
   },
   {
     "id": "2",
-    "name": "Badminton Perg",
+    "name": "Badminton",
     "date_created": "2015-12-16T03:24:00",
     "status": 1,
     "description": "Perg for Badminton",
-    "avatar_url": "http://sportsrediscovered.com/wp-content/uploads/2015/06/badminton.jpg",
+    "avatar_url": "http://asia-backpackers.com/udon/wp-content/uploads/2014/04/badminton.jpg",
     "member_list": [
       "Keyur Patel"
     ],
@@ -67,7 +67,7 @@
   },
   {
     "id": "3",
-    "name": "Soccer Perg",
+    "name": "Soccer",
     "date_created": "2015-12-16T03:24:00",
     "status": 2,
     "description": "Perg for Soccer",
@@ -100,11 +100,11 @@
   },
   {
     "id": "4",
-    "name": "Ping Pong Perg 4",
+    "name": "Yoga",
     "date_created": "2015-12-16T03:24:00",
     "status": 3,
-    "description": "Perg for Ping Pong",
-    "avatar_url": "https://travisrhancock.files.wordpress.com/2014/08/ping-pong.jpg",
+    "description": "Perg for Yoga",
+    "avatar_url": "http://www.bombayroomyoga.com/wp-content/uploads/2013/11/pretty-asana-by-water1.jpeg",
     "member_list": [
       "Eric Clifford"
     ],
@@ -127,17 +127,17 @@
       "food",
       "music"
     ],
-    "location": "Oakland",
+    "location": "New York",
     "email_alias": "jsmith@pandora.com",
     "owner": "Joe Smith"
   },
   {
     "id": "5",
-    "name": "Ping Pong Perg 5",
+    "name": "Snowboarding",
     "date_created": "2015-12-16T03:24:00",
-    "status": 0,
-    "description": "Perg for Ping Pong",
-    "avatar_url": "https://travisrhancock.files.wordpress.com/2014/08/ping-pong.jpg",
+    "status": 2,
+    "description": "Perg for snowboarding",
+    "avatar_url": "https://i.ytimg.com/vi/j5V7kD_HeMw/maxresdefault.jpg",
     "member_list": [
       "Dave Pryzgoda"
     ],
@@ -162,6 +162,40 @@
       "Sports"
     ],
     "location": "Oakland",
+    "email_alias": "jsmith@pandora.com",
+    "owner": "Joe Smith"
+  },
+  {
+    "id": "6",
+    "name": "Cooking",
+    "date_created": "2015-12-16T03:24:00",
+    "status": 2,
+    "description": "Perg for cooking",
+    "avatar_url": "http://nutritionsmart.com/wp-content/uploads/2014/12/healthy-cooking.jpg",
+    "member_list": [
+      "Dave Pryzgoda"
+    ],
+    "event_list": [
+      {
+        "id": "3",
+        "group_id": "3",
+        "creator_id": "3",
+        "title": "Fishing Trip",
+        "description": "We will sail on the north side of the Bay",
+        "start": "2015-12-16T03:24:00",
+        "end": "2015-12-17T03:24:00",
+        "venue": "Berkeley Pier",
+        "participants": [
+          "Dave Pryzgoda"
+        ]
+      }
+    ],
+    "categories": [
+      "Food",
+      "Music",
+      "Sports"
+    ],
+    "location": "New York",
     "email_alias": "jsmith@pandora.com",
     "owner": "Joe Smith"
   }
