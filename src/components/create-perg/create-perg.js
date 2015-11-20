@@ -27,5 +27,12 @@ module.exports = {
       });
     },
     methods: {
-    }
+        onSubmit: function() {
+            this.$http.post('https://gentle-shore-8434.herokuapp.com/groups', this.data, function() {
+                alert("Wow this actually worked");
+            });
+        }
+    },
+
+
 };
