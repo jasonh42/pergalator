@@ -13,8 +13,8 @@
 	input[type='text'] {
 		font-size: 16pt;
 		font-weight: 200;
-		padding: 25px 13px 24px;
-		border: 2px solid #66666A;
+		padding: 24px 15px 24px 15px;
+		border: 0.2rem solid #9d9d9d;
 		border-right: none;
 		letter-spacing: 1px;
 
@@ -25,10 +25,12 @@
 
 	button {
 		color: #fff;
-		background-color: #7AD1F1;
-		font-size: 26px;
-		border: 2px solid #66666A;
-		border-left: none;
+    background-color: #7AD1F1;
+    font-size: 17px;
+    border: 0.2rem solid #9d9d9d;
+    border-left: none;
+    width: 100px;
+    padding: 12px;
 
 		&:hover, &:focus {
 			color: #fff;
