@@ -1,8 +1,19 @@
+.discover {
+  div {
+	margin-bottom: 2%;
+	position: relative;
+	top: 48%;
+	transform: translateY(22%)
+  }
+  .search {
+	margin-bottom: 0;
+   }
+}
 .search {
 	input[type='text'] {
 		font-size: 16pt;
 		font-weight: 200;
-		padding: 24px 12px 25px;
+		padding: 25px 13px 24px;
 		border: 2px solid #66666A;
 		border-right: none;
 		letter-spacing: 1px;
@@ -24,6 +35,7 @@
 			background-color: #00B4F7;
 		}
 	}
+  	margin-bottom: 0;
 }
 
 /* always present */

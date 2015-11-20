@@ -1,21 +1,23 @@
-<div class="discover row">
-    <div class="search">
-        <div id="custom-search-input" class="col-md-offset-1 col-md-4">
-            <div class="input-group">
-                <input v-model="searchText" type="text" class="search-query form-control" placeholder="Discover your new favorite PERG" />
+<div class="discover-container container-fluid">
+    <div class="discover row">
+        <div class="search">
+            <div id="custom-search-input" class="col-md-offset-1 col-md-4">
+                <div class="input-group">
+                    <input v-model="searchText" type="text" class="search-query form-control" placeholder="Discover your new favorite PERG" />
                 <span class="input-group-btn">
                     <button class="btn" type="button">
                         <span class=" glyphicon glyphicon-search"></span>
                     </button>
                 </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="filters col-sm-2">
-    	<div class="primary-button" :id="showFilters ? 'active-filter' : ''" @click="showFilters = !showFilters; activeCreate = !activeCreate;">Filters</div>
-    </div>
-    <div class="create-perg col-sm-2">
-    	<div class="primary-button" :id="activeCreate ? 'active-filter' : ''" data-toggle="modal" @click="activeCreate = !activeCreate; showFilters = !showFilters;" data-target="#myModal">NEW PERG</div>
+        <div class="filters col-md-2">
+            <div class="primary-button" :id="showFilters ? 'active-filter' : ''" @click="showFilters = !showFilters; activeCreate = !activeCreate;">Filters</div>
+        </div>
+        <div class="create-perg col-md-2">
+            <div class="primary-button" :id="activeCreate ? 'active-filter' : ''" data-toggle="modal" @click="activeCreate = !activeCreate; showFilters = !showFilters;" data-target="#myModal">NEW PERG</div>
+        </div>
     </div>
 </div>
 <!-- Modal -->
