@@ -1,3 +1,12 @@
+$accent-color: #00B4F7;
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
 .welcome {
   background: #C2C2C2;
   width: 100%;
@@ -6,35 +15,47 @@
 .welcome-text {
   color: white;
   h1 {
-    font-weight: 900;
-    font-size: 50px;
-    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 2em;
+    letter-spacing: 0.1rem;
   }
   p {
-    padding: 0 10px 12px 10px;
-  }
-  .primary-button {
-    padding: 12px;
+    padding: 0 10px 12px 0px;
+    font-weight: lighter;
+    font-size: 1em;
+    letter-spacing: 0.1rem;
   }
   a {
     text-decoration: none;
+  }
+  a.btn.btn-primary {
+    padding: 0.8em;
+    color: $accent-color;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.2em solid $accent-color;
+    @include transition(.2s);
+    &:hover {
+      color: white;
+      background-color: $accent-color;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .welcome-text {
     padding: 2.5% 15px;
-  } 
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .welcome-text {
     padding: 2.5% 15%;
-  } 
+  }
 }
 
 @media (min-width: 992px) {
   .welcome-text {
     padding: 2.5% 25%;
-  } 
+  }
 }
