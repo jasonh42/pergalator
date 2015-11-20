@@ -33,6 +33,16 @@
 		span {
 		}
 	}
+	#main-wrap > div { min-height: 1px; }
+		#sidebar {
+    		float: left;
+    		width: 50%;
+		}
+
+		#content-wrap {
+		    float: right;
+		    width: 20%;
+		}   
 }
 @media(min-width: 480px ) {
 
@@ -42,3 +52,4 @@
   }
 
 }
+
