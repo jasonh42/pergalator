@@ -36,7 +36,7 @@
     "id": "2",
     "name": "Badminton Perg",
     "date_created": "2015-12-16T03:24:00",
-    "status": 0,
+    "status": 1,
     "description": "Perg for Badminton",
     "avatar_url": "http://sportsrediscovered.com/wp-content/uploads/2015/06/badminton.jpg",
     "member_list": [
@@ -69,7 +69,7 @@
     "id": "3",
     "name": "Soccer Perg",
     "date_created": "2015-12-16T03:24:00",
-    "status": 0,
+    "status": 2,
     "description": "Perg for Soccer",
     "avatar_url": "http://gcmsk12.org/wp-content/uploads/2015/09/soccer12.jpg",
     "member_list": [
@@ -102,7 +102,7 @@
     "id": "4",
     "name": "Ping Pong Perg 4",
     "date_created": "2015-12-16T03:24:00",
-    "status": 0,
+    "status": 3,
     "description": "Perg for Ping Pong",
     "avatar_url": "https://travisrhancock.files.wordpress.com/2014/08/ping-pong.jpg",
     "member_list": [

@@ -11,6 +11,7 @@ module.exports = {
         }
     },
     components: {
-        'filters': require('./filters/filters.js')
+        'filters': require('./filters/filters.js'),
+        'create-perg': require("./../create-perg/create-perg.js")
     }
 };

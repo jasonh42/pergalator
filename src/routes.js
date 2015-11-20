@@ -9,7 +9,7 @@ export function configRouter (router) {
         },
         '/perg/:id': {
             component: require('./components/perg-detail/detail.js')
-        }
+        },
 
         // not found handler
         //'*': {
