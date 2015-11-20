@@ -16,8 +16,8 @@ module.exports = {
     },
     ready: function() {
 
-        this.$http.get('https://gentle-shore-8434.herokuapp.com/groups', function(data) {
-            this.$set('pergs', data._embedded.groups);
+        this.$http.get('/pergs.json', function(data) {
+                this.$set('pergs', data);
         }).error(function() {
 
         });
