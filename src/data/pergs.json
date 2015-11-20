@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "name": "Ping Pong Perg 1",
+    "name": "Ping Pong Perg",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
     "description": "Perg for Ping Pong",
-    "avatar_url": "http://placehold.it/1000x300",
+    "avatar_url": "https://travisrhancock.files.wordpress.com/2014/08/ping-pong.jpg",
     "member_list": [
       "Eric Clifford"
     ],
@@ -34,11 +34,11 @@
   },
   {
     "id": "2",
-    "name": "Pull up Perg",
+    "name": "Badminton Perg",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
-    "description": "Perg for Pull ups!",
-    "avatar_url": "http://placehold.it/1000x300",
+    "description": "Perg for Badminton",
+    "avatar_url": "http://sportsrediscovered.com/wp-content/uploads/2015/06/badminton.jpg",
     "member_list": [
       "Keyur Patel"
     ],
@@ -67,11 +67,77 @@
   },
   {
     "id": "3",
-    "name": "Bay Area Fishers",
+    "name": "Soccer Perg",
     "date_created": "2015-12-16T03:24:00",
     "status": 0,
-    "description": "Perg for Fishing",
-    "avatar_url": "http://placehold.it/1000x300",
+    "description": "Perg for Soccer",
+    "avatar_url": "http://gcmsk12.org/wp-content/uploads/2015/09/soccer12.jpg",
+    "member_list": [
+      "Eric Clifford"
+    ],
+    "event_list": [
+      {
+        "id": "1",
+        "group_id": "1",
+        "creator_id": "1",
+        "title": "Ping Pong Finals",
+        "description": "Ping Pong finals in backstage",
+        "start": "2015-12-16T03:24:00",
+        "end": "2015-12-17T03:24:00",
+        "venue": "Pandora",
+        "participants": [
+          "Eric Clifford"
+        ]
+      }
+    ],
+    "categories": [
+      "food",
+      "music"
+    ],
+    "location": "Oakland",
+    "email_alias": "jsmith@pandora.com",
+    "owner": "Joe Smith"
+  },
+  {
+    "id": "4",
+    "name": "Ping Pong Perg 4",
+    "date_created": "2015-12-16T03:24:00",
+    "status": 0,
+    "description": "Perg for Ping Pong",
+    "avatar_url": "https://travisrhancock.files.wordpress.com/2014/08/ping-pong.jpg",
+    "member_list": [
+      "Eric Clifford"
+    ],
+    "event_list": [
+      {
+        "id": "1",
+        "group_id": "1",
+        "creator_id": "1",
+        "title": "Ping Pong Finals",
+        "description": "Ping Pong finals in backstage",
+        "start": "2015-12-16T03:24:00",
+        "end": "2015-12-17T03:24:00",
+        "venue": "Pandora",
+        "participants": [
+          "Eric Clifford"
+        ]
+      }
+    ],
+    "categories": [
+      "food",
+      "music"
+    ],
+    "location": "Oakland",
+    "email_alias": "jsmith@pandora.com",
+    "owner": "Joe Smith"
+  },
+  {
+    "id": "5",
+    "name": "Ping Pong Perg 5",
+    "date_created": "2015-12-16T03:24:00",
+    "status": 0,
+    "description": "Perg for Ping Pong",
+    "avatar_url": "https://travisrhancock.files.wordpress.com/2014/08/ping-pong.jpg",
     "member_list": [
       "Dave Pryzgoda"
     ],
