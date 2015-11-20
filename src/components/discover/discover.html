@@ -1,7 +1,7 @@
 <div class="discover-container container-fluid">
     <div class="discover row">
         <div class="search">
-            <div id="custom-search-input" class="col-md-offset-1 col-md-4">
+            <div id="custom-search-input" class="col-md-offset-1 col-md-6">
                 <div class="input-group">
                     <input v-model="searchText" type="text" class="search-query form-control" placeholder="Discover your PERG" />
                 <span class="input-group-btn">
@@ -13,10 +13,10 @@
             </div>
         </div>
         <div class="filters col-md-2">
-            <div class="primary-button" :id="showFilters ? 'active-filter' : ''" @click="showFilters = !showFilters; activeCreate = !activeCreate;">Filters</div>
+          <a class="btn btn-block btn-primary" :id="showFilters ? 'active-filter' : ''" @click="showFilters = !showFilters; activeCreate = !activeCreate;">Filters</a>
         </div>
         <div class="create-perg col-md-2">
-            <div class="primary-button" data-toggle="modal" data-target="#createPergModal">NEW PERG</div>
+          <a class="btn btn-block btn-primary" data-toggle="modal" data-target="#createPergModal">New Perg</a>
         </div>
     </div>
 </div>
