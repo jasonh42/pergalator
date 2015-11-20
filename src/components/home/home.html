@@ -3,12 +3,18 @@
     <div class="welcome-text">
         <h1>{{ welcomeTitle }}</h1>
         <p>{{ welcomeText }}</p>
-        <p><a class="btn btn-primary" href="#" role="button">Learn more</a></p>
+        <p>
+            <a class="btn btn-primary" role="button">Login</a>  
+            <a class="btn btn-primary" role="button">Learn more</a>
+        </p>
     </div>
     <div class="welcome-text real">
         <h1>{{ welcomeTitle }}</h1>
         <p>{{ welcomeText }}</p>
-        <p><a class="btn btn-primary" href="#" role="button">Learn more</a></p>
+        <p>
+            <a class="btn btn-primary" v-link="{ path: '/login' }" role="button">Login</a>  
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
+        </p>
     </div>
 </div>
 
