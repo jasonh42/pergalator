@@ -1,5 +1,4 @@
 <section class='create-perg'>
-  <h3>Congrats on wanting to start a PERG!</h3>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non urna
     elit. Quisque congue, metus et sodales dictum, sem dui interdum turpis, ac
@@ -10,13 +9,15 @@
   <form id="create-perg-form" class="form-horizontal">
 
     <div class="col-lg-8">
-      <div class="form-group" v-bind:class="pergNameClasses">
+      <div class="form-group" v-bind:class="{'has-success' : perg.name.length > 0}">
         <input type="text"
                class="form-control"
                placeholder="NAME OF PERG"
                aria-describedby="inputPergNameSuccess"
                v-model="perg.name"/>
-        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span class="glyphicon form-control-feedback"
+              v-bind:class="{'glyphicon-ok' : perg.name.length > 0}"
+              aria-hidden="true"></span>
         <span id="inputPergNameSuccess" class="sr-only"></span>
       </div>
     </div>
@@ -32,54 +33,64 @@
     </div>
 
     <div class="col-lg-12">
-      <div class="form-group">
+      <div class="form-group" v-bind:class="{'has-success' : perg.imageURL.length > 0}">
         <input type="text"
                class="form-control"
                placeholder="IMAGE DIRECT LINK"
                aria-describedby="inputImageURLSuccess"
                v-model="perg.imageURL"/>
-        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span class="glyphicon form-control-feedback"
+              v-bind:class="{'glyphicon-ok' : perg.imageURL.length > 0}"
+              aria-hidden="true"></span>
         <span id="inputImageURLSuccess" class="sr-only"></span>
       </div>
     </div>
 
     <div class="col-lg-6">
-      <div class="form-group">
+      <div class="form-group" v-bind:class="{'has-success' : user.firstName.length > 0}">
         <input type="text"
                class="form-control"
                placeholder="FIRST NAME"
                aria-describedby="inputFirstNameSuccess"
                v-model="user.firstName"/>
-        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span class="glyphicon form-control-feedback"
+              v-bind:class="{'glyphicon-ok' : user.firstName.length > 0}"
+              aria-hidden="true"></span>
         <span id="inputFirstNameSuccess" class="sr-only"></span>
       </div>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-6" v-bind:class="{'has-success' : user.lastName.length > 0}">
       <div class="form-group">
         <input type="text"
                class="form-control"
                placeholder="LAST NAME"
                aria-describedby="inputLastNameSuccess"
                v-model="user.lastName"/>
-        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span class="glyphicon form-control-feedback"
+              v-bind:class="{'glyphicon-ok' : user.lastName.length > 0}"
+              aria-hidden="true"></span>
         <span id="inputLastNameSuccess" class="sr-only"></span>
       </div>
     </div>
 
     <div class="col-lg-12">
-      <div class="form-group">
+      <div class="form-group" v-bind:class="{'has-success' : user.email.length > 0}">
         <input type="text"
                class="form-control"
                placeholder="EMAIL"
                aria-describedby="inputEmailSuccess"
                v-model="user.email"/>
-        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <span class="glyphicon form-control-feedback"
+              v-bind:class="{'glyphicon-ok' : user.email.length > 0}"
+              aria-hidden="true"></span>
         <span id="inputEmailSuccess" class="sr-only"></span>
       </div>
     </div>
 
-    <input class="btn btn-block btn-primary" type="submit" value="SUBMIT"/>
+    <input class="btn btn-block btn-primary"
+           type="submit"
+           value="SUBMIT"/>
 
   </form>
 </section>

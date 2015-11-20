@@ -10,9 +10,6 @@ export function configRouter (router) {
         '/perg/:id': {
             component: require('./components/perg-detail/detail.js')
         },
-        '/create-perg': {
-            component: require('./components/create-perg/create-perg.js')
-        },
 
         // not found handler
         //'*': {

@@ -25,7 +25,6 @@ module.exports = {
       }).error(function(resp) {
           alert("Request loading");
       });
-
     },
     methods: {
     }
