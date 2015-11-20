@@ -7,7 +7,8 @@ module.exports = {
     props: ['searchText'],
     data: function() {
         return {
-            showFilters: false
+            showFilters: false,
+            activeCreate: false
         }
     },
     components: {

@@ -1,22 +1,49 @@
 .filter-container {
   background-color: #E6E6E6;
-  padding: 0 5% 0 5%;
+  padding: 2% 5% 2% 5%;
+  margin-top: 20px;
 }
 .filter-divider {
-  border-right: 1px solid #CFCFD0;
+  border-right: 2px solid #CFCFD0;
 }
 .filter-type {
-  padding: 1% 3% 1% 3%;
+  padding: 1.5% 3% 2.5% 3%;
+
   h1 {
     color: #00ABF1;
     font-size: 25px;
     font-weight: 400;
     letter-spacing: 1.5px;
   }
+
   ul {
+    display: block;
     color: white;
+    padding-left: 0;
   }
+
   li {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 4px 5px 4px;
     display: inline;
+    color: white;
+    background-color: #8F8F8F;
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    width: 100px;
+    float: left;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      a{
+        color: #00ABF1;
+      }
+    }
   }
 }
