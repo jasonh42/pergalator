@@ -7,6 +7,11 @@ body {
   	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   	font-size: 20px;
 }
+h1 {
+}
+.banner-image {
+	border-bottom: 3px solid #00B4F7;
+}
 .starter-template {
   // padding: 40px 15px;
 }
@@ -14,6 +19,7 @@ body {
 .primary-button {
 	padding: 10px 5px;
 	color: #00B4F7;
+	background: #FFFFFF !important;
  	text-transform: uppercase;
 	text-align: center;
 	font-size: 16pt;
