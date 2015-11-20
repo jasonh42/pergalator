@@ -1,4 +1,5 @@
 require('./home.scss');
+
 module.exports = {
     template: require("./home.html"),
     components: {
@@ -15,10 +16,10 @@ module.exports = {
     },
     ready: function() {
 
-        this.$http.get('/pergs.json', function(data) {
-            this.$set('pergs', data);
+        this.$http.get('https://gentle-shore-8434.herokuapp.com/groups', function(data) {
+            this.$set('pergs', data._embedded.groups);
         }).error(function() {
-            console.log("Error");
+
         });
 
     }
