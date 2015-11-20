@@ -16,17 +16,17 @@
             <div class="primary-button" :id="showFilters ? 'active-filter' : ''" @click="showFilters = !showFilters; activeCreate = !activeCreate;">Filters</div>
         </div>
         <div class="create-perg col-md-2">
-            <div class="primary-button" data-toggle="modal" data-target="#myModal">NEW PERG</div>
+            <div class="primary-button" data-toggle="modal" data-target="#createPergModal">NEW PERG</div>
         </div>
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="createPergModal" tabindex="-1" role="dialog" aria-labelledby="createPergModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Congrats on wanting to start a PERG!</h4>
+        <h3 class="modal-title" id="createPergModalLabel">Congrats on wanting to start a PERG!</h3>
       </div>
       <div class="modal-body">
         <create-perg></create-perg>

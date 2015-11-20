@@ -58,3 +58,28 @@
   background: #00ACF1;
   color: white;
 }
+
+#createPergModal {
+	$background-color: #eeeeee;
+	$accent-color: #00B4F7;
+	.modal-content {
+		background-color: $background-color;
+		padding: 40px;
+	}
+	.modal-header {
+		border: none;
+	}
+	.modal-footer {
+		border: none;
+	}
+	.modal-title {
+		color: $accent-color;
+		font-size: 1.5em;
+    font-weight: 300;
+	}
+	@media (min-width: 768px) {
+		.modal-dialog {
+			width: 700px;
+		}
+	}
+}
