@@ -6,7 +6,6 @@ import { configRouter } from './routes'
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
-Vue.http.headers.common['Access-Control-Allow-Origin'] = 'http://localhost:3000';
 const router = new VueRouter();
 configRouter(router);
 

@@ -7,10 +7,39 @@ $accent-color: #00B4F7;
     transition: $duration;
 }
 
+@mixin blur($blur) {
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  filter: blur($blur);
+}
+
 .welcome {
   background: #C2C2C2;
   width: 100%;
   margin-bottom: 1%;
+  position: relative;
+}
+.welcome-banner-image {
+  background: url('http://www.pandora.com/static/careers/_photos/music_spread.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include blur(10px);
+}
+.welcome-banner-overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
 }
 .welcome-text {
   color: white;
@@ -40,6 +69,11 @@ $accent-color: #00B4F7;
       color: white;
       background-color: $accent-color;
     }
+  }
+
+  &.real {
+    position: absolute;
+    top: 0;
   }
 }
 

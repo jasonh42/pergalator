@@ -1,3 +1,37 @@
+$accent-color: #00B4F7;
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
 section.create-perg {
   text-align: left;
+
+  form {
+    width: auto;
+  }
+
+  p {
+    color: gray;
+    font-weight: 200;
+    font-size: 0.85em;
+    padding: 0 0 15px 0;
+  }
+
+  input.btn.btn-primary {
+    padding: 0.8em;
+    font-size: 0.8em;
+    color: $accent-color;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.15em solid $accent-color;
+    @include transition(.2s);
+    &:hover {
+      color: white;
+      background-color: $accent-color;
+    }
+  }
 }
