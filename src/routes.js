@@ -4,12 +4,9 @@ export function configRouter (router) {
         '': {
             component: require('./components/home/home.js')
         },
-        '/foo': {
-            component: require('./components/foo/foo.js')
-        },
         '/perg/:id': {
             component: require('./components/perg-detail/detail.js')
-        },
+        }
 
         // not found handler
         //'*': {

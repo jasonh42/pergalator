@@ -1,13 +1,13 @@
 .discover {
-  div {
-	margin-bottom: 2%;
-	position: relative;
-	top: 48%;
-	transform: translateY(22%)
-  }
-  .search {
-	margin-bottom: 0;
-   }
+	margin-top: 15px;
+
+	.search > div {
+		margin-top: 9px;
+	}
+
+	& > div {
+		margin-bottom: 10px;
+	}
 }
 .welcome {
   background: url('http://www.pandora.com/static/careers/_photos/locations/spread.gif');
@@ -37,6 +37,12 @@
 
 		&:hover, &:focus {
 			color: #fff;
+			outline: 0;
+		}
+		&:focus {
+			background-color: #7AD1F1;
+		}
+		&:hover {
 			background-color: #00B4F7;
 		}
 	}
